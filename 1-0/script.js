@@ -1,4 +1,3 @@
 function readyFunction(){
-	debugger;
-	alert("congratulations, you fixed it!');	
+	alert("congratulations, you fixed it!");	
 }
