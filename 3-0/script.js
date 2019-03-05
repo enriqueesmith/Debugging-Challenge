@@ -1,10 +1,11 @@
 function readyFunction(){
 
-	var items = document.getElementsByClassName("list-group-items");
-	for(var i = 0; i<items.length;i++)
+	var items = document.getElementsByClassName("badge");
+	console.log(items);
+	for(var i = 0; i<items.value;i++)
 	{
 		items[i].addEventListener("click",function(event) {
-			console.log(event.target.childNodes);
+
 			for(var j = 0; j<event.target.childNodes.length;j++)
 			{
 				if(event.target.childNodes.tagname=='SPAN')

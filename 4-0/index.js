@@ -4,7 +4,7 @@ window.onload = () => {
             inner: {
                 capitals: ["Paris", "Rome", "Madrid"],
                 winner: {
-                    vl: 's'
+                    vl: 'S'
                 }
             }
         },
@@ -58,13 +58,16 @@ window.onload = () => {
             }
         }
     ];
+    
     var toRerun = "Gotcha!";
     let toReturn = "";
     
-    for(var i=0; i<things.lenght; i++){
-        toReturn += things[0].winner.vl;  
+    for(var i=0; i<things.length; i++){
+        toReturn += things[i].inner.winner.vl;  
     }
     
     document.querySelector("title").innerHTML = toRerun;
+    document.querySelector("#title").innerHTML = toReturn;
+    
     
 };
